@@ -1,0 +1,23 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byu1kim/githubdemo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/byu1kim/githubdemo/issues"
+  },
+  "homepage": "https://github.com/byu1kim/githubdemo#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
