@@ -8,6 +8,12 @@ const PORT = 4000;
 const app = express();
 
 // Middlewares
+
+// View engine
+app.set("view engine", "pug");
+app.set("views", process.cwd() + "/src/views");
+
+// Morgan
 const logger = morgan("dev");
 app.use(logger);
 
@@ -16,6 +22,7 @@ app.use("/", globalRouter);
 app.use("/videos", videoRouter);
 app.use("/users", userRouter);
 
+// Listen to the server
 const handleListening = () =>
   console.log(`✅ Server listenting on port http://localhost:${PORT} 🚀`);
 app.listen(PORT, handleListening);
